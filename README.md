@@ -27,7 +27,7 @@ docker run --rm \
 ## Post build steps
 
 - Upload to S3: Once the ZIP file is created in the output/ directory, upload it to your S3 bucket.
-- Update CloudFormation Template: Modify the 100_layer.cf.yaml CloudFormation template to point to the new S3 object. This ensures that the Lambda functions can use the updated layer.
+- Update CloudFormation Template: Update your CloudFormation template to point to the new S3 object. This ensures that the Lambda functions can use the updated layer.
 - Update the relevant SAM templates to use the new layer
 
 ## Additional notes
