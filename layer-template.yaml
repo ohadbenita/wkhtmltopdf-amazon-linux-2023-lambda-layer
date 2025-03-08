@@ -1,0 +1,12 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: Lambda layer CloudFormation template
+
+Resources:
+  WKHtmlToPdfLambdaLayer:
+    Type: AWS::Lambda::LayerVersion
+    Properties:
+      LayerName: !Subwk-html-to-pdf-lambda-layer
+      Description: wkhtmltopdf Lambda layer
+      Content:
+        S3Bucket: !Sub lambda-layers-${AWS::Region} # Change to your own S3 bucket
+        S3Key: wkhtmltox-0.12.6-4.amazonlinux2_lambda.zip
