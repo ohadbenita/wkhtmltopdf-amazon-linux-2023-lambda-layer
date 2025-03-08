@@ -1,6 +1,6 @@
 # WKHTMLTOPDF Lambda Layer Build Instructions
 
-This document explains how to create a Lambda layer containing the wkhtmltopdf binary and its required libraries using a Docker container. The resulting ZIP file should be uploaded to S3 and the CloudFormation template (`100_layer.cf.yaml`) should be updated accordingly.
+This document explains how to create a Lambda layer containing the wkhtmltopdf binary and its required libraries using a Docker container. The resulting ZIP file should be uploaded to S3 and the [CloudFormation template](./layer-template.yaml) should be updated accordingly.
 
 ## Prerequisites
 
